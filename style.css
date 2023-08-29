@@ -1,0 +1,109 @@
+body {
+    font-family: arial;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.all div {
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.all div:hover {
+    box-shadow: 1px 2px 20px rgba(255, 255, 255, 0.5);
+}
+
+.reset {
+    border: 1px solid red;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 100px;
+    border-radius: 10px;
+    transition: box-shadow 0.15s;
+}
+
+.reset:hover {
+    box-shadow: 1px 2px 10px red;
+}
+
+.display {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        margin-top: 180px;
+    }
+    .all {
+        margin-top: 100px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        margin-top: 50px;
+    }
+    .all {
+        margin-top: 50px;
+        width: 350px;
+    }
+    .display {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    .all div {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 359px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .all {
+        margin-top: 50px;
+        width: 300px;
+    }
+    .display {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .reset {
+        margin-top: 50px;
+    }
+    .all div {
+        width: 70px;
+        height: 70px;
+    }
+}
