@@ -106,7 +106,7 @@ function reload() {
     // for Display
 
     div.innerHTML = `
-    <p>not started</p>
+    <p>select to start</p>
     <pre> You   -   Com </pre>
     <p>wins: ${0}, losses: ${0}, ties: ${0}</p>
    `
