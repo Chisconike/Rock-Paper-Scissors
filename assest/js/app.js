@@ -45,7 +45,7 @@ function play(choice) {
         if (computerMove === '🪨') {
             result = 'Tie 🪢.';
         } else if (computerMove === '📄') {
-            result = 'You loose 😭.';
+            result = 'Computer Win 😂.';
         } else if (computerMove === '✂️') {
             result = 'You win 🏆.';
         }
@@ -57,13 +57,13 @@ function play(choice) {
         } else if (computerMove === '📄') {
             result = 'Tie 🪢.';
         } else if (computerMove === '✂️') {
-            result = 'You loose 😭.';
+            result = 'Computer Win 😂.';
         }
         // for Scissors
 
     } else if (choice === '✂️') {
         if (computerMove === '🪨') {
-            result = 'You loose 😭.';
+            result = 'Computer Win 😂.';
         } else if (computerMove === '📄') {
             result = 'You win 🏆.';
         } else if (computerMove === '✂️') {
@@ -74,7 +74,7 @@ function play(choice) {
     // for Scores
     if (result === 'You win 🏆.') {
         score.wins++;
-    } else if (result === 'You loose 😭.') {
+    } else if (result === 'Computer Win 😂.') {
         score.losses++;
     } else if (result === 'Tie 🪢.') {
         score.ties++;
@@ -91,7 +91,7 @@ function play(choice) {
 
     div.innerHTML = `
     <p>${result}</p>
-    <pre> You ${choice}   -   ${computerMove} Com </pre>
+    <pre> You ${choice} - ${computerMove} Com </pre>
     <p>wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}</p>
 `
 }
@@ -105,11 +105,7 @@ function reload() {
     score.losses = 0;
     // for Display
 
-    div.innerHTML = `
-    <p>select to start</p>
-    <pre> You   -   Com </pre>
-    <p>wins: ${0}, losses: ${0}, ties: ${0}</p>
-   `
+    div.innerHTML = ``
 }
 
 
